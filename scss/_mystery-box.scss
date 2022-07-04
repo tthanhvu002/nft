@@ -144,7 +144,13 @@
             gap: 20px;
         }
         .mystery-item{
-
+            &-info{
+                .left{
+                    .name{
+                        font-size: 25px;
+                    }
+                }
+            }
         }
     }
 }

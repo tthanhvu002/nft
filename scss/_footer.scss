@@ -100,3 +100,17 @@
         }
     }
 }
+@media screen and (max-width: 420px) {
+    .footer{
+        &-social{
+            gap: 14px;
+        }
+        &-link{
+            &-heading{
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

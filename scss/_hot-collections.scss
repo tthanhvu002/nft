@@ -127,3 +127,24 @@
     }
 }
 
+@media screen and (max-width: 420px){
+    .hot-collections{
+        .list{
+            .item{
+                &-status{
+                    .left{
+                        p{
+                            font-size: 8px;
+                        }
+                    }
+                    .right{
+                        p{
+                            font-size: 8px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

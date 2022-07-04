@@ -424,7 +424,8 @@
                     .left{
                         height: 50px;
                         span{
-                            transform: translate(-100%, -50%);
+                            left: 57%;
+                            transform: translate(-100%, -30%);
                             font-size: 18px;
                         }
                     }
@@ -432,9 +433,11 @@
                         height: 50px;
                         transform: translateX(-20px);
                         span{   
-                            transform: translate(-30%, -50%);
-                            left: 37%;
+                            transform: translate(-30%, -30%);
+                            left: 45%;
                             font-size: 18px;
+                        }
+                        .soon{
                         }
                     }
                 }
@@ -526,3 +529,26 @@
 }
 
 
+@media screen and (max-width: 420px) {
+    .game-list{
+        &-item-md-heading{
+            span{
+                font-size: 8px !important;
+            }
+        }
+        &-item-md{
+            .right{
+                span{
+                    top: 53%;
+                    font-size: 6px;
+                }
+            }
+            .left{
+                span{
+                    top: 53%;
+                    font-size: 6px;
+                }
+            }
+        }
+    }
+}

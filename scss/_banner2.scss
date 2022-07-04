@@ -206,17 +206,62 @@
 
 @media screen and (max-width: 767.98px) {
     .banner2{
+        .banner-money{
+            border-left: 38px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 47px solid #1c3e5c;
+            border-radius: 0;
+            width: 156px;
+            height: 50px;
+            p{
+                font-size: 20px;
+                transform: translate(45px, -83px);
+            }
+        }
+        &-logo-mb{
+            top: 3%;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
         &-box{
             .mystery-list{
                 flex-direction: row;
             }
             .mystery-item{
                 &-bg{
-                    height: 170px;
+                    height: 95px;
+                    background-size: cover;
                 }
                 &-text{
                     p,span{
-                        font-size: 10px;
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+        &-text{
+            p{
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .banner2{
+        &-box{
+            .mystery-list{
+                flex-direction: row;
+            }
+            .mystery-item{
+                &-bg{
+                    height: 98px;
+                    background-size: cover;
+                }
+                &-text{
+                    p,span{
+                        font-size: 10px !important;
                     }
                 }
             }

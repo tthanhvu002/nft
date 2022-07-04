@@ -145,11 +145,20 @@
 
 @media screen and (max-width: 767.98px) {
     .info-wrap{
+        .info-wrap-row .col-lg-6 ul li{
+            font-size: 25px;
+        }
         &-heading{
             background-size: cover;
             height: 40px;
             span{
                 top: 50%;
+            }
+        }
+        &-heading--center{
+            background-size: contain;
+            span{
+                margin-right: 0;
             }
         }
         .logo-list{
@@ -164,8 +173,8 @@
             .item-img{
                 padding: 10px 16px;
                 img{
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }

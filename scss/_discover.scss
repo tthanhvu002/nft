@@ -253,3 +253,25 @@
         }
     }
 }
+
+@media screen and (max-width: 767.98px) {
+    .discover{
+        &-filter-rarity-list-item img{
+            height: 40px;
+            width: 40px;
+        }
+        &-filter-price-wrap{
+            .up{
+                margin-left: 10px;
+            }
+            gap: 12px;
+            .min, .max{
+                padding: 10px 16px;
+            }
+        }
+        &-filter-game-list img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
