@@ -257,6 +257,7 @@ h2 {
 }
 .sidebar li .menu-item {
   position: absolute;
+  top: 3px;
   display: flex;
   flex-direction: column;
 }
@@ -357,7 +358,7 @@ h2 {
   }
 }
 .banner {
-  background-image: url(/img/bn.jpg);
+  background-image: url(../img/bn.jpg);
   height: 840px;
   width: 100%;
   background-repeat: no-repeat;
@@ -404,7 +405,7 @@ h2 {
 
 .banner.hp3 {
   background-size: contain;
-  background-image: url(/img/banner-hp3.png);
+  background-image: url(../img/banner-hp3.png);
 }
 .banner.hp3 .banner-text {
   display: flex;
@@ -861,6 +862,9 @@ h2 {
   }
   .footer-link-heading span {
     font-size: 20px;
+  }
+  .footer-line img {
+    transform: translate(6px, -12px);
   }
 }
 .heading-btn {
