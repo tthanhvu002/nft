@@ -1,0 +1,197 @@
+.swiper1 {
+    width: 100%;
+    height: 700px;
+    .swiper-pagination{
+        bottom: 0;
+        top: unset;
+        left: 50%;
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+    }
+    .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+        border: 1px solid $second-color;
+    }
+    .swiper-pagination-bullet-active{
+        
+    }
+}
+.swiper2{
+    width: 100%;
+    max-height: 1000px;
+    .swiper-pagination{
+        bottom: 3px;
+        transform: unset;
+        top: unset;
+        left: 35%;
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+        font-size: 30px;
+        color: #fff;
+        span{
+            border: 1px solid #ccc;
+            line-height: 1;
+            padding: 12px 20px;
+            border-radius: 4px; 
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{
+        bottom: 3px;
+        top: unset;
+        border: 1px solid #ccc;
+        width: 48px;
+        height: 56px;
+        border-radius: 4px;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+        font-size: 15px;
+
+    }
+    .swiper-button-prev{
+        left: 100px;
+    }
+    .swiper-button-next{
+        right: 100px;
+    }
+    .swiper-pagination-bullet{
+        font-size: 30px;
+        color: #fff;
+        border: 1px solid #ccc;
+        background-color: #000;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $second-color;
+    }
+    .swiper-pagination-bullet-active{
+        
+    }
+}
+.swiper3{
+    display: none;
+}
+@media screen and (max-width: 1023.98px) {
+    .swiper1{
+        .swiper-pagination{
+            bottom: 55px;
+        }
+        .swiper-pagination-bullet{
+            width: 15px;
+            height: 15px;
+            border: 1px solid $second-color;
+        }
+    }
+    .swiper2{
+        max-height: 3100px;
+    }
+    
+    .swiper3{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .swiper-button-next::after,.swiper-button-prev::after{
+            color: rgba(255, 255, 255, 0.466);
+            font-size: 22px;
+        }
+        max-height: 150px;
+        .swiper-slide {
+            overflow: hidden;
+            padding-top: 34px;
+            opacity: 0;
+            height: 150px !important;
+            .menu{
+                li{
+                    justify-content: center;
+                }
+                height: 100px;
+                justify-content: space-around;
+                &-item{
+                    position: absolute;
+                    z-index: 99;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+        }
+        .swiper-slide-active{
+            opacity: 1;
+            height: 150px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .swiper1{
+        .swiper-pagination{
+            left: 38%;
+        }
+    }
+    .swiper2{
+        max-height: 5760px;
+        .swiper-pagination{
+            left: 21%;
+        }
+        .swiper-button-next{
+            right: 6%;
+            height: 50px;
+        }
+        .swiper-button-prev{
+            left: 6%;
+            height: 50px;
+        }
+    }
+    .swiper3{
+        .swiper-button-next::after,.swiper-button-prev::after{
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.466);
+            
+        }
+        .swiper-button-next, .swiper-button-prev{
+            top: 74%;
+        }
+        .swiper-button-next{
+            right: -1%;
+        }
+        .swiper-button-prev{
+            left: -1%;
+        }
+        .swiper-slide {
+            padding-top: 0;
+            .menu{
+                width: 100%;
+                padding: 0 15px;
+                justify-content: space-around;
+                li{
+                    justify-content: center;
+                }
+                &-item{
+                    height: 64%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                &-active{
+                    
+                height: 91px;
+                transform: rotate(270deg);
+                width: 165px;
+                bottom: 40px;
+
+                }
+            }
+        }
+        .swiper-slide-active{
+        }
+    }
+}

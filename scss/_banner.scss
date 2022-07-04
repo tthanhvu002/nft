@@ -1,0 +1,275 @@
+.banner{
+    background-image: url(/img/bn.jpg);
+    height: 840px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    background-position: center center;
+    &-text{
+        font-size: 72px;
+        font-weight: bold;
+        position: absolute;
+        bottom: -2px;
+        left: 290px;
+        color: $primary-color;
+        h2{
+            margin-bottom: 0;
+            font-size: 72px;
+            color: $primary-color;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 1;
+            color: #fff;
+            font-size: 60px;
+        }
+    }
+    &-money{
+        background-color: #1c3e5c;
+        padding: 5px 70px 5px 5px;
+        border-radius: 50px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 15px;
+        right: 150px;
+        width: fit-content;
+        color: #fff;
+        img{
+            width: 60px;
+        }
+    }
+}
+.banner.hp3{
+    background-size: contain;
+    background-image: url(/img/banner-hp3.png);
+    .banner-text{
+        h2,p{
+            font-size: 35px;
+        }
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        bottom: unset;
+        top: 80px;
+        left: 7%;
+    }
+    .banner-money{
+        top: 70px;
+    }
+    .banner-abs{
+        right: -3.5%;
+        top: 50%;
+        width: 53%;
+        position: absolute;
+    }
+    .banner-slogan{
+        p{
+            color: #fff;
+            font-size: 50px;
+            max-width: 620px;
+            line-height: 1;                      
+
+        }
+    }
+    .banner-logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        line-height: 1;                      
+
+        p{
+            color: #16fefe;
+            text-transform: uppercase;
+            font-size: 150px;
+            font-weight: bold;
+            font-family: 'BigNoodleTitling', sans-serif;
+            line-height: 1;                      
+        }
+        h2{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 150px;
+            font-family: 'BigNoodleTitling', sans-serif;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #16fefe;   
+            line-height: 1;                      
+
+        }
+    }
+}
+@media screen and (max-width: 1400px){
+    .banner.hp3{
+        .banner-slogan{
+            p{
+                font-size: 35px;
+                max-width: 555px;
+            }
+        }
+        .banner-logo{
+            p,h2{
+                font-size: 115px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .banner{
+        height: 355px;
+       
+        .banner-text{
+            bottom: -1px !important;
+            left: 10%;
+            h2{
+                font-size: 25px !important;
+            }
+            p{
+                font-size: 25px !important;
+            }
+            left: 100px;
+            bottom: 3px;
+        }
+        .banner-money{
+            top: 0 !important;
+            right: 0;
+            background-color: unset;
+            border-bottom: 0 solid transparent;
+            border-left: 40px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 100px solid #1c3e5c;
+            border-radius: 0;
+            img, p{
+                transform: translateY(-90px);
+            }
+            img{
+                width: 70px;
+            }
+        }
+        
+    }
+    .banner.hp3{
+        background-position-x: -71px;
+    }
+    .banner.hp3 .banner-text{
+        left: 2% !important;
+        top: 40px !important;
+        bottom: unset !important;
+        height: fit-content;
+        h2{
+            font-size: 35px !important;
+        }
+        p{
+            font-size: 35px !important;
+        }
+        left: 100px;
+        bottom: 3px;
+    }
+    .banner.hp3 .banner-slogan{
+        top: 172px;
+        right: 105px;
+    }
+    .banner.hp3 .banner-logo{
+        top: 245px;
+        right: 329px;
+        p,h2{
+            font-size: 55px;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+    }
+    .banner.hp3 .banner-slogan p {
+        color: #fff;
+        font-size: 30px;
+        max-width: 360px;
+    }
+    .banner-abs{
+        right: 3.5% !important;
+        top: 51%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .banner.hp3{
+        .banner-text{
+            top: 23px !important;
+            gap: 5px;
+            h2,p{
+                font-size: 15px !important;
+            }
+        }
+        .banner-abs{
+            right: 13.5% !important;
+            top: 53%;
+        }
+    }
+
+    .banner{
+        height: 190px;
+        .banner-text{
+            left: 50px;
+            p,h2{
+                font-size: 15px !important;
+            }
+        }
+        .banner-money{
+            top: 0 !important;
+            right: -44px;
+            background-color: unset;
+            border-bottom: 0 solid transparent;
+            border-left: 20px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 50px solid #1c3e5c;
+            border-radius: 0;
+            img, p{
+                transform: translateY(-50px);
+            }
+            p{
+                font-size: 12px;
+            }
+            img{
+                width: 40px;
+            }
+        }
+        .banner-slogan{
+            top: 80px !important;
+            p{
+                font-size: 12px !important;
+                max-width: 164px !important;
+            }
+        }
+        .banner-logo{
+            gap: 2px !important;
+            right: 198px !important;
+            top: 117px !important;
+            p,h2{
+                font-size: 25px !important;
+            }
+            h2{
+                margin-bottom: 0 ;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1700px) {
+    .banner.hp3{
+        .banner-text{
+           
+            p,h2{
+                font-size: 55px;
+            }
+        }
+        .banner-slogan{
+            p{
+                max-width: 670px;
+            }
+        }
+        .banner-logo{
+        }
+    }
+}
+

@@ -1,0 +1,129 @@
+.hot-collections{
+    .list{
+        display: flex;
+        gap: 20px;
+        .item{
+            width: 33.3333%;
+            &-status{
+                display: none;
+                .left, .right{
+                    position: relative;
+                    width: 50%;
+                    height: 60px;
+                    z-index: 99;
+                    img{
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        position: absolute;
+                    }
+                    
+                    p{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);  
+                        font-size: 18px;
+                        z-index: 99;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .item-bg{
+            height: 300px;
+            width: 100%;
+            padding-top: 20%;
+            position: relative;
+            &-img{
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+                height: 100%;
+                object-fit: cover;
+            }
+            &-text{
+                background: linear-gradient(90deg, rgba(126,41,11,1) 87%, rgba(255,0,0,0) 100%);
+                position: absolute;
+                bottom: 0;
+                left: -2%;
+                img{
+                    position: absolute;
+                    height: 100%;
+                }
+                p{
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .hot-collections{
+        overflow: scroll;
+        .list{
+            overflow: scroll;
+            .item{
+                &-status{
+                    display: flex;
+                    .left{
+                        p{
+                                left: 80%;
+                                transform: translate(-50%, -50%);
+                                font-size: 16px;
+                                width: 100%;
+                        }
+                    }
+                    .right{
+                        p{
+                            left: 80%;
+                                transform: translate(-50%, -50%);
+                                font-size: 16px;
+                                width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .list::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .hot-collections{
+        .list{
+            .item{
+                &-bg{
+                    height: 130px;
+                }
+                &-bg-text{
+                    left: 0;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                &-status{
+                    .left, .right{
+                        height: 26px;
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                    .soon{
+                        transform: translate(-57%, -50%) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

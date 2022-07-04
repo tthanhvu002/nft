@@ -1,0 +1,255 @@
+.discover{
+    &-row{
+        .row{
+            padding: 0;
+        }
+    }
+    &-filter{
+        margin-top: 90px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        &-heading{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        &-heading-bg{
+            color: #fff;
+            font-size: 30px;
+            width: fit-content;
+            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            width: 150px;
+            background-color: unset;
+            border-bottom: 0px solid transparent;
+            border-left: 0 solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 30px solid $primary-color;
+        }
+        &-heading-text{
+            position: absolute;
+            top: -15%;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            left: 10px;
+        }
+        &-game, &-rarity, &-price{
+            
+            padding: 1%;
+            padding-top: 5%;
+            background-color: #1c2133;
+            border: 1px solid $primary-color;
+            position: relative;
+            margin-top: auto;
+            height: auto;
+            height: 120px;
+
+        }
+        &-game{
+            flex: 1;
+            &-list{
+                justify-content:space-between ;
+                display: flex;
+                gap: 8px;
+                img{
+                    background-color: #fff;
+                    object-fit: cover;
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+        }
+        &-rarity{
+            &-list{
+                display: flex;
+                gap: 8px;
+                &-item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        object-fit: cover;
+                    }
+                    margin-bottom: auto;
+                }
+            }
+        }
+        &-price{
+            &-wrap{
+                display: flex;
+                align-items: center;
+                .up{
+                    border: 1px solid #286bb0;
+                    padding: 5px;
+                    img{
+                        width: 36px;
+                    }
+                }
+                .down{
+                    margin-left: 5px;
+                    border: 1px solid #286bb0;
+
+                    padding: 5px;
+
+                    img{
+                        width: 36px;
+                        transform: rotate(180deg);
+                    }
+                }
+                .min{
+                    margin-left: 8px;
+                    margin-right: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    background-color: #29314b;
+                    input{
+                        display: block;
+                        width: 20px;
+                        color: #fff;
+                        font-size: 20px;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                    }
+                    input::-webkit-input-placeholder{
+                    color:#fff ;
+                    }
+                    input::-moz-input-placeholder{
+                    color:#fff ;
+                    }
+                }
+                .max{
+                    display: flex;
+                    margin-left: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    background-color: #29314b;
+                    input{
+                        display: block;
+                        width: 20px;
+
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                    input::-webkit-input-placeholder{
+                    color:#fff ;
+                    }
+                    input::-moz-input-placeholder{
+                    color:#fff ;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px){
+    .discover{
+        &-filter{
+            &-game, &-rarity, &-price{
+                height: 140px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1700px){
+    .discover{
+        &-filter{
+            &-game, &-rarity, &-price{
+                height: 170px;
+            }
+            &-game{
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            
+
+            &-rarity-list-item img {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+
+    .discover{
+        
+        &-filter{
+            flex-direction: column;
+            &-game, &-rarity, &-price{
+                width: 100%;
+                display: flex;
+                padding-top: 1%;
+                height: auto;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &-heading{
+                position: unset;
+                &-bg{
+                    display: none;
+                }
+                p{
+                    position: unset;
+                }
+            }
+            &-game{
+                &-list{
+                    img{
+                        height: 70px;
+                        width: 70px;
+                    }
+                }
+            }
+            &-rarity-list{
+                gap: 20px;
+            }
+            &-rarity-list-item{
+                img{
+                    width: 60px;height: 60px;
+                }
+            }
+            &-price-wrap{
+                gap: 20px;
+                .up{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .down{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .min{
+                    padding: 12px 28px;
+                    input{
+                        font-size: 20px;
+                    }
+                }
+                .max{
+                    padding: 12px 28px;
+                    input{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

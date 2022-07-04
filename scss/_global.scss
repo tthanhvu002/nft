@@ -1,0 +1,158 @@
+* {
+  font-family: "Agency FB", sans-serif;
+  font-weight: 500;
+}
+h2{
+  margin-bottom: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.container {
+  width: 100% !important; 
+  padding: 0 7.5% 0 calc(155px + 7.5%);
+  max-width: 100%;
+}
+.mg-center {
+  margin: 0 auto;
+}
+.main {
+  overflow: hidden;
+  width: 100%;
+  background-color: #171a26;
+}
+.soon{
+  color: $second-color !important;
+}
+.hot-title{
+  margin: 50px 0;
+  position: relative;
+  img{
+    width: 120%;
+  }
+  &-viewall-mb{
+    display: none;
+  }
+  &-heading{
+    left: 1%;
+    top: 0;
+    text-transform: uppercase;
+    position: absolute;
+    color: $primary-color;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  &-name{
+    right: 15%;
+    bottom: 0;
+    text-transform: capitalize;
+    position: absolute;
+    color: $primary-color;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  &-btn{
+    right: 0;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-viewall{
+    color: $primary-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  &-select{
+    select{
+      color: $primary-color;
+      font-size: 30px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+.sm{
+  transform: scale(0.75);
+}
+.discover-row{
+  justify-content: space-evenly;
+}
+.gamelist-mb{
+  display: none;
+}
+@media screen and (min-width: 1500px) {
+  .container {
+  }
+}
+@media screen and (max-width: 1023.98px) {
+    .sm{
+      transform: scale(1);
+    }
+    .container{
+        padding: 0 2%;
+    }
+    .gamelist-mb{
+      display: flex;
+      gap: 20px;
+      
+        flex-direction: row;
+        img{
+            width: calc(20% - 15px);
+            height: 130px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .hot-title{
+      &-viewall-mb{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        img{
+          height: 50px;
+          width: 100px;
+        }
+        p{
+          position: absolute;
+          color: $yellow-color;
+          font-size: 30px;
+          top: 0;
+          left: 10%;
+        }
+      }
+    }
+}
+@media screen and (max-width: 767.98px) {
+  .gamelist-mb{
+    display: flex;
+    gap: 10px;
+    
+      flex-direction: row;
+      img{
+          width: calc(20% - 7px);
+          height: 130px;
+          object-fit: cover;
+          object-position: center;
+      }
+  }
+  .hot-title{
+    p{
+      font-size: 28px;
+    }
+    &-name{
+      font-size: 28px;
+    }
+  }
+}
+
+.hp3.container{
+    padding: 0 7%;
+}
