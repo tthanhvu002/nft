@@ -5,3 +5,4 @@ if(sidebar){
     const w = container.offsetWidth ;
     container.style.width = `${w}px`
 }
+alert(document.body.offsetWidth)
