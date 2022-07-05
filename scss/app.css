@@ -745,7 +745,7 @@ h2 {
     top: 50%;
   }
   .info-wrap-heading--center {
-    background-size: contain;
+    background-size: cover;
   }
   .info-wrap-heading--center span {
     margin-right: 0;
@@ -1143,9 +1143,6 @@ h2 {
   left: 5%;
   top: 2%;
   width: 12%;
-}
-.collections-item-body .left {
-  transform: translateY(8px);
 }
 .collections-item-body .left p {
   font-size: 15px;
