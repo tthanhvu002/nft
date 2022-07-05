@@ -34,7 +34,7 @@
                     left: 48%;
                     font-weight: bold;
                     text-transform: uppercase;
-                    font-size: 50px;
+                    font-size: 40px;
                     color: $second-color;
                     position: absolute;
 
@@ -53,14 +53,15 @@
                     width: 50%;
                     height: 125px;
                     img{
+                        height: 100%;
                         width: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                     span{
 
                         position: absolute;
                         color: #fff;
-                        font-size: 35px;
+                        font-size: 32px;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
@@ -71,19 +72,19 @@
                     width: 50%;
 
                     height: 125px;
-                    transform: translateX(-46px);
+                    transform: translateX(-36px);
                     img{
+                        height: 100%;
                         width: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                     span{
-
                         position: absolute;
                         color: $second-color;
-                        font-size: 35px;
+                        font-size: 32px;
                         top: 50%;
-                        left: 35%;
-                        transform: translate(calc(-25%), -50%);
+                        left: 43%;
+                        transform: translate(calc(-26%), -50%);
                     }
 
                 }
@@ -98,7 +99,7 @@
                 margin-bottom: 0;
                 line-height: 1;
                 text-align: center;
-                font-size: 50px;
+                font-size: 40px;
                 margin-bottom: 20px;
             }
             .box-wrap{
@@ -154,7 +155,7 @@
                     span{
                         
                         text-transform: uppercase;
-                        font-size: 30px;
+                        font-size: 25px;
                         color: $second-color;
                         position: absolute;
     
@@ -171,19 +172,17 @@
                         position: relative;
                         height: 90px;
                         background-size: cover;
-                        background-image: url(/img/game-left-btn.png);
 
                         span{
                             position: absolute;
                             color: #fff;
-                            font-size: 25px;
+                            font-size: 18px;
                             top: 50%;
                             left: 50%;
                             transform: translate(-65%, -50%);
                         }
                     }
                     .right{
-                        background-image: url(/img/game-right-btn.png);
                         position: relative;
                         height: 90px;
                         background-size: cover;
@@ -192,7 +191,7 @@
                         span{
                             position: absolute;
                             color: $second-color;
-                            font-size: 25px;
+                            font-size: 18px;
                             top: 50%;
                             left: 50%;
                             transform: translate(calc(-32%), -50%);
@@ -425,17 +424,17 @@
                         height: 50px;
                         span{
                             left: 57%;
-                            transform: translate(-100%, -30%);
-                            font-size: 18px;
+                            transform: translate(-100%, -54%);
+                            font-size: 16px;
                         }
                     }
                     .right{
                         height: 50px;
-                        transform: translateX(-20px);
+                        transform: translateX(-60px);
                         span{   
-                            transform: translate(-30%, -30%);
-                            left: 45%;
-                            font-size: 18px;
+                            transform: translate(-30%, -54%);
+                            left: 48%;
+                            font-size: 16px;
                         }
                         .soon{
                         }
@@ -492,11 +491,11 @@
                     }
                     .right{
                         height: 20px;
-                        transform: translateX(-8px);
+                        transform: translateX(-24px);
                         span{   
-                            transform: translate(-32%, -50%);
+                            transform: translate(-12%, -50%);
                             top: 65%;
-                            left: 48%;
+                            left: 43%;
                             font-size: 7px;
                         }
                     }

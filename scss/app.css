@@ -206,10 +206,6 @@ h2 {
     font-size: 20px;
   }
 }
-.hp3.container {
-  padding: 0 7%;
-}
-
 .sidebar {
   background-image: url(/img/sidebar-bg.jpg);
   background-size: cover;
@@ -413,7 +409,7 @@ h2 {
   gap: 20px;
   bottom: unset;
   top: 80px;
-  left: 7%;
+  left: 16%;
 }
 .banner.hp3 .banner-text h2, .banner.hp3 .banner-text p {
   font-size: 35px;
@@ -545,7 +541,7 @@ h2 {
     gap: 5px;
   }
   .banner.hp3 .banner-text h2, .banner.hp3 .banner-text p {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   .banner.hp3 .banner-abs {
     right: 13.5% !important;
@@ -1468,7 +1464,7 @@ h2 {
   left: 48%;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 40px;
   color: #20c7ec;
   position: absolute;
 }
@@ -1487,13 +1483,14 @@ h2 {
   height: 125px;
 }
 .game-list-item-md-btn .left img {
+  height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .game-list-item-md-btn .left span {
   position: absolute;
   color: #fff;
-  font-size: 35px;
+  font-size: 32px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1502,19 +1499,20 @@ h2 {
   position: relative;
   width: 50%;
   height: 125px;
-  transform: translateX(-46px);
+  transform: translateX(-36px);
 }
 .game-list-item-md-btn .right img {
+  height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .game-list-item-md-btn .right span {
   position: absolute;
   color: #20c7ec;
-  font-size: 35px;
+  font-size: 32px;
   top: 50%;
-  left: 35%;
-  transform: translate(-25%, -50%);
+  left: 43%;
+  transform: translate(-26%, -50%);
 }
 .game-list-item-right {
   display: flex;
@@ -1526,7 +1524,7 @@ h2 {
   margin-bottom: 0;
   line-height: 1;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .game-list-item-right .box-wrap {
@@ -1571,7 +1569,7 @@ h2 {
   }
   .game-list-item-md-heading span {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     color: #20c7ec;
     position: absolute;
   }
@@ -1587,18 +1585,16 @@ h2 {
     position: relative;
     height: 90px;
     background-size: cover;
-    background-image: url(/img/game-left-btn.png);
   }
   .game-list-item-md-btn .left span {
     position: absolute;
     color: #fff;
-    font-size: 25px;
+    font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-65%, -50%);
   }
   .game-list-item-md-btn .right {
-    background-image: url(/img/game-right-btn.png);
     position: relative;
     height: 90px;
     background-size: cover;
@@ -1607,7 +1603,7 @@ h2 {
   .game-list-item-md-btn .right span {
     position: absolute;
     color: #20c7ec;
-    font-size: 25px;
+    font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-32%, -50%);
@@ -1732,17 +1728,17 @@ h2 {
   }
   .game-list-item-md-btn .left span {
     left: 57%;
-    transform: translate(-100%, -30%);
-    font-size: 18px;
+    transform: translate(-100%, -54%);
+    font-size: 16px;
   }
   .game-list-item-md-btn .right {
     height: 50px;
-    transform: translateX(-20px);
+    transform: translateX(-60px);
   }
   .game-list-item-md-btn .right span {
-    transform: translate(-30%, -30%);
-    left: 45%;
-    font-size: 18px;
+    transform: translate(-30%, -54%);
+    left: 48%;
+    font-size: 16px;
   }
   .game-list-item-right .box-wrap .box-img {
     width: 70px;
@@ -1774,12 +1770,12 @@ h2 {
   }
   .game-list-item-md-btn .right {
     height: 20px;
-    transform: translateX(-8px);
+    transform: translateX(-24px);
   }
   .game-list-item-md-btn .right span {
-    transform: translate(-32%, -50%);
+    transform: translate(-12%, -50%);
     top: 65%;
-    left: 48%;
+    left: 43%;
     font-size: 7px;
   }
   .game-list-item-right h2 {
