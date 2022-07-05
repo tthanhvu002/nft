@@ -533,17 +533,21 @@
     .game-list{
         &-item-md-heading{
             span{
-                font-size: 8px !important;
+                font-size: 7px !important;
             }
         }
         &-item-md{
             .right{
+                background-image: unset;
+                background-size: contain;
                 span{
                     top: 53%;
-                    font-size: 6px;
+                    font-size: 5px;
                 }
             }
             .left{
+                background-image: unset;
+                background-size: contain;
                 span{
                     top: 53%;
                     font-size: 6px;

@@ -1796,11 +1796,19 @@ h2 {
 }
 @media screen and (max-width: 420px) {
   .game-list-item-md-heading span {
-    font-size: 8px !important;
+    font-size: 7px !important;
+  }
+  .game-list-item-md .right {
+    background-image: unset;
+    background-size: contain;
   }
   .game-list-item-md .right span {
     top: 53%;
-    font-size: 6px;
+    font-size: 5px;
+  }
+  .game-list-item-md .left {
+    background-image: unset;
+    background-size: contain;
   }
   .game-list-item-md .left span {
     top: 53%;
