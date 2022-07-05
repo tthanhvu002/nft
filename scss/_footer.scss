@@ -12,7 +12,7 @@
             transform: translateY(-50%);
             left: 10px;
             color: #fff;
-            font-size: 40px;
+            font-size: 35px;
         }
     }
     &-link-menu{
@@ -25,7 +25,7 @@
         list-style: none;
         border-left: 1px solid #279a9f;
         li{
-            font-size: 40px;
+            font-size: 35px;
             color: #fff;
         }
     }
@@ -36,18 +36,26 @@
     }
     &-line{
         img{
-            transform: translate(36px, -36px)
+            transform: translate(36px, -42px)
         }
     }
     &-copyright{
         color: #fff;
         margin-top: -35px;
         display: flex;
-        font-size: 40px;
+        font-size: 25px;
         justify-content:space-between;
     }
 }
-
+@media screen and (min-width: 1500px){
+    .footer{
+        &-line{
+            img{
+                transform: translate(48px, -50px)
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1023.98px) {
     .footer{

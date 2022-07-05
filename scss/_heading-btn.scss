@@ -8,11 +8,11 @@
         height: 130px;
     }
     h2{
-        color: #f6d80f;
+        color: #f6d80f !important;
         padding: 10px ;
         font-weight: bold;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         color: $primary-color;
         font-size: 50px;
@@ -44,9 +44,9 @@
             color: #f6d80f;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 50px;
-            left: 25%;
-            top: 24px;
+            font-size: 40px;
+            left: 32%;
+            top: 35px;
         }
     }
 }

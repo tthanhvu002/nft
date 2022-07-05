@@ -7,22 +7,22 @@
     position: relative;
     background-position: center center;
     &-text{
-        font-size: 72px;
+        font-size: 62px;
         font-weight: bold;
         position: absolute;
-        bottom: -2px;
+        bottom: 8px;
         left: 290px;
         color: $primary-color;
         h2{
             margin-bottom: 0;
-            font-size: 72px;
+            font-size: 62px;
             color: $primary-color;
             text-transform: uppercase;
         }
         p{
             line-height: 1;
             color: #fff;
-            font-size: 60px;
+            font-size: 50px;
         }
     }
     &-money{

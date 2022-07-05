@@ -2,14 +2,14 @@
     margin-top: 50px;
 
     &-heading{
-        background-image: url(/img/title.png);
-        height: 95px;
+        background-image: url(../img/title.png);
+        height: 90px;
         background-repeat: no-repeat;
         position: relative;
         span{
             position: absolute;
             color: $primary-color;
-            font-size: 50px;
+            font-size: 40px;
             top: 46%;
             transform: translateY(-50%);
             left: 30px;
@@ -19,9 +19,9 @@
     &-heading--center{
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url(/img/title-center.png);
+        background-image: url(../img/title-center.png);
         span{
-            font-size: 50px;
+            font-size: 40px;
             text-align: center;
             margin: 0 auto;
             display: block;
@@ -33,7 +33,7 @@
         margin-top: 60px;
         p{
             color: #fff;
-            font-size: 50px;
+            font-size: 35px;
         }
         &-heading{
             position: relative;

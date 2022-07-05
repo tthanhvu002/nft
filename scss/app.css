@@ -80,7 +80,7 @@ h2 {
 }
 
 .soon {
-  color: #20c7ec !important;
+  color: #5666a0 !important;
 }
 
 .hot-title {
@@ -207,11 +207,13 @@ h2 {
   }
 }
 .sidebar {
-  background-image: url(/img/sidebar-bg.jpg);
+  background-image: url(../img/sidebar-bg.jpg);
   background-size: cover;
   width: 200px;
   transform: translate(-6px, -9px);
-  position: absolute;
+  position: fixed;
+  overflow: scroll;
+  height: 100vh;
   top: 0;
   bottom: -10px;
   left: 0;
@@ -280,6 +282,10 @@ h2 {
   position: unset;
   align-self: flex-start;
   transform: translateX(8px);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar-mobile {
@@ -363,23 +369,23 @@ h2 {
   background-position: center center;
 }
 .banner-text {
-  font-size: 72px;
+  font-size: 62px;
   font-weight: bold;
   position: absolute;
-  bottom: -2px;
+  bottom: 8px;
   left: 290px;
   color: #d56020;
 }
 .banner-text h2 {
   margin-bottom: 0;
-  font-size: 72px;
+  font-size: 62px;
   color: #d56020;
   text-transform: uppercase;
 }
 .banner-text p {
   line-height: 1;
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
 }
 .banner-money {
   background-color: #1c3e5c;
@@ -606,15 +612,15 @@ h2 {
   margin-top: 50px;
 }
 .info-wrap-heading {
-  background-image: url(/img/title.png);
-  height: 95px;
+  background-image: url(../img/title.png);
+  height: 90px;
   background-repeat: no-repeat;
   position: relative;
 }
 .info-wrap-heading span {
   position: absolute;
   color: #d56020;
-  font-size: 50px;
+  font-size: 40px;
   top: 46%;
   transform: translateY(-50%);
   left: 30px;
@@ -623,10 +629,10 @@ h2 {
 .info-wrap-heading--center {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/title-center.png);
+  background-image: url(../img/title-center.png);
 }
 .info-wrap-heading--center span {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -638,7 +644,7 @@ h2 {
 }
 .info-wrap-row p {
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
 }
 .info-wrap-row-heading {
   position: relative;
@@ -780,7 +786,7 @@ h2 {
   transform: translateY(-50%);
   left: 10px;
   color: #fff;
-  font-size: 40px;
+  font-size: 35px;
 }
 .footer-link-menu {
   padding-left: 12px;
@@ -793,7 +799,7 @@ h2 {
   border-left: 1px solid #279a9f;
 }
 .footer-link-menu li {
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
 }
 .footer-social {
@@ -802,16 +808,21 @@ h2 {
   justify-content: flex-end;
 }
 .footer-line img {
-  transform: translate(36px, -36px);
+  transform: translate(36px, -42px);
 }
 .footer-copyright {
   color: #fff;
   margin-top: -35px;
   display: flex;
-  font-size: 40px;
+  font-size: 25px;
   justify-content: space-between;
 }
 
+@media screen and (min-width: 1500px) {
+  .footer-line img {
+    transform: translate(48px, -50px);
+  }
+}
 @media screen and (max-width: 1023.98px) {
   .footer {
     padding-bottom: 200px;
@@ -873,11 +884,11 @@ h2 {
   height: 130px;
 }
 .heading-btn h2 {
-  color: #f6d80f;
+  color: #f6d80f !important;
   padding: 10px;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: #d56020;
   font-size: 50px;
@@ -910,9 +921,9 @@ h2 {
   color: #f6d80f;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 50px;
-  left: 25%;
-  top: 24px;
+  font-size: 40px;
+  left: 32%;
+  top: 35px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -963,7 +974,7 @@ h2 {
   align-items: center;
 }
 .mystery-box .mystery-item-bg {
-  background-image: url(/img/mystery-border.png);
+  background-image: url(../img/mystery-border.png);
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -1125,7 +1136,7 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url(/img/cl-body-bg.png);
+  background-image: url(../img/cl-body-bg.png);
 }
 .collections-item-body-cate {
   position: absolute;
@@ -1667,7 +1678,7 @@ h2 {
   .game-list-item-md-btn .right span {
     position: absolute;
     color: #20c7ec;
-    font-size: 25px;
+    font-size: 24px;
     top: 50%;
     left: 50%;
     transform: translate(-32%, -50%);
@@ -1770,7 +1781,7 @@ h2 {
   }
   .game-list-item-md-btn .right {
     height: 20px;
-    transform: translateX(-24px);
+    transform: translateX(-16px);
   }
   .game-list-item-md-btn .right span {
     transform: translate(-12%, -50%);

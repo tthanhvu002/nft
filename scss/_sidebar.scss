@@ -1,13 +1,16 @@
 .sidebar{
-    background-image: url(/img/sidebar-bg.jpg);
+    background-image: url(../img/sidebar-bg.jpg);
     background-size: cover;
     width: 200px;
     transform: translate(-6px, -9px);
-    position: absolute;
+    position: fixed;
+    overflow: scroll;
+    height: 100vh;
     top: 0;
     bottom: -10px;
     left: 0;
     z-index: 99;
+
     &-container{
         padding: 3.5%;
         display: flex;
@@ -79,7 +82,9 @@
     }
 }
 
-
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
 .sidebar-mobile{
     display: none;
 }
