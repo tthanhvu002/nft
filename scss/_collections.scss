@@ -56,12 +56,12 @@
             }
             .left{
                 p{
-                    font-size: 15px;
+                    font-size: 12px;
                     color: $second-color;
                     text-transform: uppercase;
                 }
                 h2{
-                    font-size: 25px;
+                    font-size: 22px ;
                     text-transform: uppercase;
 
                     color: $second-color;
@@ -86,10 +86,10 @@
     }
     &-item.sm{
         .collections-item-wrap{
-            height: 195px;
+            height: 190px;
         }
         .collections-item-body{
-            background-size: cover;
+            background-size: contain;
         }
         .left{
             transform: translateY(-10%);
@@ -108,11 +108,25 @@
                 font-size: 15px;
             }
         }
+        .collections-item-img{
+            img{
+                height: 111px;
+            }
+        }
         .collections-item-body-cate{
-            top: -19%;
+            top: -26%;
         }
     }
     
+}
+@media screen and (min-width: 1400px){
+    .collections{
+        &-item.sm{
+            .collections-item-body{
+                background-size: cover;
+            }
+        }
+    }
 }
 @media screen and (min-width: 1600px){
     .collections{
@@ -128,9 +142,10 @@
                 
             }
             &-img{
-                transform: translateY(22%);
+                transform: unset;
                 height: 310px;
                 width: 100%;
+                transform: translateY(22%);
                 img{
                     max-height: 270px;
                     object-fit: contain;
@@ -157,16 +172,16 @@
                 .left{
                     transform: unset;
                     height: fit-content;
+                    transform: translateY(-10px);
+
                     p{
                         font-size: 25px;
-                        color: #fff;
                         text-transform: uppercase;
                     }
                     h2{
                         font-size: 35px;
                         text-transform: uppercase;
     
-                        color: #fff;
                     }
                 }
                 .right{
@@ -184,6 +199,39 @@
                         color: $second-color;
                         font-size: 35px;
                     }
+                }
+            }
+        }
+        &-item.sm{
+            .collections-item-wrap{
+                height: 222px;
+            }
+            .collections-item-img{
+                height: 116px;
+            }
+            .collections-item-body{
+                .right{
+                    
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    align-items: center;
+                    transform: translateY(0);
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    p{
+                        color: $second-color;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .collections-item-body{
+                height: 27%;
+                &-cate{
+                    top: -34%;
                 }
             }
         }
@@ -234,21 +282,21 @@
                 }
                 .left{
                     transform: unset;
+                    transform: translateY(-7px);
+
                     height: fit-content;
                     p{
                         font-size: 25px;
-                        color: #fff;
                         text-transform: uppercase;
                     }
                     h2{
                         font-size: 35px;
                         text-transform: uppercase;
     
-                        color: #fff;
                     }
                 }
                 .right{
-                    transform: translateY(-10px);
+                    transform: translateY(-7px);
                     
                     height: fit-content;
                     display: flex;
@@ -281,18 +329,20 @@
         }
         &-item.sm{
             .collections-item-wrap{
-                height: 280px;
+                height: 210px;
                 
             }
             .collections-item-body {
+                height: 28%;
+                background-size: cover;
                 .right {
                     gap: 2px;
                     img {
-                        width:28px;
-                        height: 28px;
+                        width:20px;
+                        height: 20px;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
                 .left{
@@ -301,15 +351,15 @@
                         color: $second-color;
                     }
                     p{
-                        font-size: 15px;
+                        font-size: 12px;
                         display: unset;
                     }
                     h2{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
                 .collections-item-body-cate {
-                    top: -28%;
+                    top: -35%;
                 }
             }
         }
@@ -371,6 +421,20 @@
                         color: $second-color;
                         font-size: 25px;
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px){
+    .collections{
+        &-item.sm{
+            .left{
+                p{
+                    font-size: 13px;
+                }
+                h2{
+                    font-size: 16px !important;
                 }
             }
         }

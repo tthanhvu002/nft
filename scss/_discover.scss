@@ -22,12 +22,12 @@
             margin-bottom: 20px;
             top: 0;
             left: 0;
-            width: 150px;
+            width: 130px;
             background-color: unset;
             border-bottom: 0px solid transparent;
             border-left: 0 solid transparent;
-            border-right: 40px solid transparent;
-            border-top: 30px solid $primary-color;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #713314;
         }
         &-heading-text{
             position: absolute;
@@ -54,12 +54,13 @@
             &-list{
                 justify-content:space-between ;
                 display: flex;
-                gap: 8px;
+                gap: 3px;
                 img{
                     background-color: #fff;
                     object-fit: cover;
-                    height: 45px;
-                    width: 45px;
+                    height: 55px;
+                    border-radius: 5px;
+                    width: 50px;
                 }
             }
         }
@@ -154,6 +155,29 @@
             }
         }
     }
+    .slider-pag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .slider-arrow-next, .slider-arrow-prev, .slider-dots{
+            font-size: 20px;
+            color: #fff;
+            display: flex;
+            gap: 20px;
+        }
+        .slider-arrow-next, .slider-arrow-prev, .slider-dots{
+            div{
+                border: 1px solid rgba(204, 204, 204, 0.304);
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1500px){
@@ -161,6 +185,12 @@
         &-filter{
             &-game, &-rarity, &-price{
                 height: 140px;
+            }
+            &-game{
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
             }
         }
     }
@@ -189,7 +219,9 @@
 @media screen and (max-width: 1023px){
 
     .discover{
-        
+        .slider-pag{
+            margin-top: 60px;
+        }
         &-filter{
             flex-direction: column;
             &-game, &-rarity, &-price{

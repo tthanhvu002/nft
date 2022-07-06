@@ -61,7 +61,7 @@
         top: 70px;
     }
     .banner-abs{
-        right: -3.5%;
+        right: 1.5%;
         top: 50%;
         width: 53%;
         position: absolute;
@@ -91,7 +91,7 @@
         }
         h2{
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: lighter;
             font-size: 150px;
             font-family: 'BigNoodleTitling', sans-serif;
             -webkit-text-stroke-width: 1px;
@@ -101,7 +101,7 @@
         }
     }
 }
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1500px){
     .banner.hp3{
         .banner-slogan{
             p{
@@ -188,7 +188,7 @@
         max-width: 360px;
     }
     .banner-abs{
-        right: 3.5% !important;
+        right: 10.5% !important;
         top: 51%;
     }
 }
@@ -203,7 +203,7 @@
             }
         }
         .banner-abs{
-            right: 13.5% !important;
+            right: 18.5% !important;
             top: 53%;
         }
     }
@@ -272,4 +272,11 @@
         }
     }
 }
-
+@media screen and (max-width: 420px){
+    .banner.hp3{
+        .banner-abs{
+            top: 51%;
+            right: 20% !important;
+        }
+    }
+}

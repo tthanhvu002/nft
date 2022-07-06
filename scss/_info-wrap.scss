@@ -28,6 +28,9 @@
             margin-right: 10px;
             color: $primary-color;
         }
+        &-viewall{
+            display: none;
+        }
     }
     &-row{
         margin-top: 60px;
@@ -64,7 +67,8 @@
         display: flex;
         align-items: center;
         gap: 50px;
-        justify-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
         .item{
             p{
                 text-align: center;
@@ -76,12 +80,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 40px 40px;
+            padding: 15px 55px;
             border: 1px solid $primary-color;
             background-color: #2f384c;
             img{
-                width: 200px;
-                height: 200px;
+                width: 170px;
+                height: 170px;
             }
         }
     }
@@ -92,10 +96,10 @@
     .info-wrap{
         .logo-list{
             .item-img{
-                padding: 10px 50px;
+                padding: 20px 90px;
                 img{
-                    width: 180px;
-                    height: 180px;
+                    width: 190px;
+                    height: 190px;
                 }
             }
         }
@@ -140,6 +144,17 @@
                 }
             }
         }
+        &-heading--center{
+            position:relative;
+            &-viewall{
+                display: block;
+                position: absolute;
+                top: 10%;
+                right: 2%;
+                font-size: 35px;
+                color: $primary-color;
+            }
+        }
     }
 }
 
@@ -159,6 +174,9 @@
             background-size: cover;
             span{
                 margin-right: 0;
+            }
+            &-viewall{
+                font-size: 20px;
             }
         }
         .logo-list{

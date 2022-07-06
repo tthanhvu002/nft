@@ -4,35 +4,35 @@
     width: 200px;
     transform: translate(-6px, -9px);
     position: fixed;
-    overflow: scroll;
-    height: 100vh;
     top: 0;
-    bottom: -10px;
+    bottom: -20px;
     left: 0;
     z-index: 99;
 
     &-container{
-        padding: 3.5%;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        padding-top: 30px;
         flex-direction: column;
         transform: translateX(-10px);
     }
     .logo{
-        margin: 10px 0;
-        width: 95px;
-        height: 95px;
+        width: 55px;
+        height: 55px;
         object-fit: contain;
     }
     .menu{
         width: 100%;
         list-style: none;
-        margin-top: 20px;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 55px;
+        gap: 0px;
         flex-direction: column;
     }
     li{
@@ -46,18 +46,18 @@
         text-align: center;
         .menu-item{
             position: absolute;
-            top: 3px;
+            top:11px;
             display: flex;
             flex-direction: column;
             p{
                 color: #fff;
-                font-size: 25px;
+                font-size: 15px;
                 z-index: 99;
             }
         }
     }
     li img{
-        height: 40px;
+        height: 25px;
         object-fit: contain;
         z-index: 99;
         left: 41%;
@@ -71,14 +71,14 @@
         }
     }
     .menu-active{
-        height: 82px;
-        width: 82%;
+        height: 65px;
+        width: 100%;
         opacity: 0;
         transition: 0.2s ease;
         z-index: 1;
         position: unset;
         align-self: flex-start;
-        transform: translateX(8px);
+        transform: translateX(-12%);
     }
 }
 
@@ -88,7 +88,36 @@
 .sidebar-mobile{
     display: none;
 }
+@media screen and (min-width: 1400px){
+    .sidebar{
+        &-container{
+            padding-top: 26px;
+        }
+        .logo{
+            width: 75px;
+            height: 75px;
+        }
+        .menu{
+            li{
+                img{
+                    height: 40px;
 
+                }
+                p{
+                    font-size: 25px;
+                }
+                .menu-item{
+                    top: 17px;
+                }
+            }
+            .menu-active{
+                width: 74%;
+                transform: translateX(11%);
+                height: 108px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1023.98px) {
     .sidebar{
         display: none;

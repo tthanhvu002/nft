@@ -6,15 +6,17 @@
     padding: 0.5%;
     &-item{
         background-color: #282b32;
-        padding: 2%;
         display: flex;
         gap: 30px;
         align-items: flex-end;
         &-img{
             width: 30%;
+            padding:  1% 0 1% 1% ;
             img{
+                width: 100%;
                 height: 100%;
                 object-fit: cover;
+                object-position: 10px;
             }
        } 
        &-md{
@@ -32,7 +34,7 @@
                     top:50%;
                     transform: translate(-48%,-50%);
                     left: 48%;
-                    font-weight: bold;
+                    font-weight: 700;
                     text-transform: uppercase;
                     font-size: 40px;
                     color: $second-color;
@@ -58,13 +60,13 @@
                         object-fit: contain;
                     }
                     span{
-
+                        
                         position: absolute;
                         color: #fff;
                         font-size: 32px;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50%, calc(-50%));
                     }
                 }
                 .right{
@@ -74,6 +76,7 @@
                     height: 125px;
                     transform: translateX(-36px);
                     img{
+
                         height: 100%;
                         width: 100%;
                         object-fit: contain;
@@ -84,13 +87,14 @@
                         font-size: 32px;
                         top: 50%;
                         left: 43%;
-                        transform: translate(calc(-26%), -50%);
+                        transform: translate(calc(-26%), calc(-50%));
                     }
 
                 }
             }
        }
        &-right{
+            padding: 1% 1% 1% 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -100,6 +104,8 @@
                 line-height: 1;
                 text-align: center;
                 font-size: 40px;
+                text-transform: uppercase;
+                font-weight: 900;
                 margin-bottom: 20px;
             }
             .box-wrap{
@@ -107,6 +113,8 @@
                 align-items: center;
                 display: flex;
                 .box{
+                    border: 1px solid $primary-color;
+                    border-top: none;
                     background-color: #2d323d;
                     &-img{
                         width: 175px;
@@ -136,7 +144,6 @@
     .game-list{
         &-item{
             background-color: #282b32;
-            padding: 2%;
             display: flex;
             gap: 20px;
             &-img{
@@ -148,8 +155,8 @@
                 flex: 1;
                 gap: 10px;
                 &-heading{
+
                     width: 100%;
-                    position: relative;
                     img{
                     }
                     span{
@@ -179,7 +186,7 @@
                             font-size: 18px;
                             top: 50%;
                             left: 50%;
-                            transform: translate(-65%, -50%);
+                            transform: translate(-65%, calc(-50%));
                         }
                     }
                     .right{
@@ -194,7 +201,7 @@
                             font-size: 18px;
                             top: 50%;
                             left: 50%;
-                            transform: translate(calc(-32%), -50%);
+                            transform: translate(calc(-32%), calc(-50%));
                         }
     
                     }
@@ -213,8 +220,8 @@
                 .box{
                     background-color: #2d323d;
                     &-img{
-                        width: 130px;
-                        height: 146px;
+                        width: 120px;
+                        height: 125px;
                         padding: 5px;
                         img{
     
@@ -240,7 +247,6 @@
     .game-list{
         &-item{
             background-color: #282b32;
-            padding: 2%;
             display: flex;
             gap: 20px;
             &-img{
@@ -268,7 +274,8 @@
                 &-btn{
                     
                     .left{
-                     
+                        img{
+                        }
                         span{
                             position: absolute;
                             color: #fff;
@@ -279,7 +286,8 @@
                         }
                     }
                     .right{
-                       
+                        img{
+                        }
 
                         span{
                             position: absolute;
@@ -307,7 +315,7 @@
                     background-color: #2d323d;
                     &-img{
                         width: 130px;
-                        height: 146px;
+                        height: 130px;
                         padding: 5px;
                         img{
     
@@ -410,6 +418,7 @@
                 }
             }
             &-md{
+                padding: 0 0 1%;
                 &-heading{
                     span{
                         font-size: 20px;
@@ -422,6 +431,10 @@
                 &-btn{
                     .left{
                         height: 50px;
+                        img{
+                            transform: unset;
+                        }
+                        
                         span{
                             left: 57%;
                             transform: translate(-100%, -54%);
@@ -431,6 +444,9 @@
                     .right{
                         height: 50px;
                         transform: translateX(-60px);
+                        img{
+                            transform: unset;
+                        }
                         span{   
                             transform: translate(-30%, -54%);
                             left: 48%;
@@ -442,12 +458,17 @@
                 }
             }
             &-right{
+                h2{
+                    margin-bottom: 5px;
+                    font-size: 30px;
+                }
                 .box-wrap{
+                    
                     .box{
                         &-img{
                             
-                            width: 70px;
-                            height: 72px;
+                            width: 77px;
+                            height: 84px;
 
                             img{
 
