@@ -138,20 +138,24 @@ h2{
       flex-direction: row;
       img{
           width: calc(20% - 7px);
-          height: 130px;
+          height: 111px;
           object-fit: cover;
           object-position: center;
       }
   }
   .hot-title{
     p{
-      font-size: 28px;
+      font-size: 17px;
     }
     &-name{
-      font-size: 28px;
+      font-size: 17px;
     }
     &-viewall{
-      font-size: 20px;
+      font-size: 17px;
+    }
+    &-viewall-mb img{
+      height: 29px;
+      width: 55px;
     }
   }
   .hot-title-select select {

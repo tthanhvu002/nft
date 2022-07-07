@@ -189,18 +189,22 @@ h2 {
   }
   .gamelist-mb img {
     width: calc(20% - 7px);
-    height: 130px;
+    height: 111px;
     object-fit: cover;
     object-position: center;
   }
   .hot-title p {
-    font-size: 28px;
+    font-size: 17px;
   }
   .hot-title-name {
-    font-size: 28px;
+    font-size: 17px;
   }
   .hot-title-viewall {
-    font-size: 20px;
+    font-size: 17px;
+  }
+  .hot-title-viewall-mb img {
+    height: 29px;
+    width: 55px;
   }
   .hot-title-select select {
     font-size: 20px;
@@ -1546,9 +1550,6 @@ h2 {
   .collections-item-wrap {
     height: 240px;
   }
-  .collections-item-img {
-    transform: unset;
-  }
   .collections-item-body {
     height: 25%;
   }
@@ -2176,8 +2177,11 @@ h2 {
     height: 50px;
   }
   .banner2 .banner-money p {
-    font-size: 20px;
+    font-size: 17px;
     transform: translate(45px, -83px);
+  }
+  .banner2-text-mb {
+    font-size: 35px;
   }
   .banner2-logo-mb {
     top: 3%;
@@ -2205,14 +2209,14 @@ h2 {
     flex-direction: row;
   }
   .banner2-box .mystery-item-bg {
-    height: 98px;
+    height: 70px;
     background-size: cover;
   }
   .banner2-box .mystery-item-text p, .banner2-box .mystery-item-text span {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
   .banner2-text p {
-    font-size: 20px !important;
+    font-size: 17px !important;
   }
 }
 .hot-collections .list {
@@ -2323,6 +2327,7 @@ h2 {
     font-size: 10px;
   }
   .hot-collections .list .item-status .soon {
+    left: 73% !important;
     transform: translate(-57%, -50%) !important;
   }
 }
