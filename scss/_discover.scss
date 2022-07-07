@@ -165,6 +165,7 @@
             color: #fff;
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .slider-arrow-next, .slider-arrow-prev, .slider-dots{
             div{
@@ -175,6 +176,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+        }
+        .slider-dots{
+            div.active{
+                border: 1px solid $primary-color;
             }
         }
     }
@@ -308,6 +314,18 @@
         &-filter-heading-text{
             font-size: 15px;
             margin-right: 5px;
+        }
+        .slider-pag{
+            gap: 10px !important;
+        }
+        .slider-arrow-next, .slider-arrow-prev, .slider-dots{
+            font-size: 12px !important;
+        }
+        .slider-arrow-next, .slider-arrow-prev, .slider-dots {
+            div{
+                width: 25px !important;
+                height: 25px !important;
+            }
         }
     }
 }

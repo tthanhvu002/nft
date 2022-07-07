@@ -1558,7 +1558,7 @@ h2 {
     height: 111px;
   }
   .collections-item-body {
-    height: 25%;
+    height: 28%;
   }
   .collections-item-body .left p, .collections-item-body .left h2 {
     font-size: 13px;
@@ -2216,7 +2216,7 @@ h2 {
     flex-direction: row;
   }
   .banner2-box .mystery-item-bg {
-    height: 70px;
+    height: 82px;
     background-size: cover;
   }
   .banner2-box .mystery-item-text p, .banner2-box .mystery-item-text span {
@@ -2501,6 +2501,7 @@ h2 {
   color: #fff;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .discover .slider-pag .slider-arrow-next div, .discover .slider-pag .slider-arrow-prev div, .discover .slider-pag .slider-dots div {
   border: 1px solid rgba(204, 204, 204, 0.304);
@@ -2510,6 +2511,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.discover .slider-pag .slider-dots div.active {
+  border: 1px solid #d56020;
 }
 
 @media screen and (min-width: 1500px) {
@@ -2612,6 +2616,16 @@ h2 {
   .discover-filter-heading-text {
     font-size: 15px;
     margin-right: 5px;
+  }
+  .discover .slider-pag {
+    gap: 10px !important;
+  }
+  .discover .slider-arrow-next, .discover .slider-arrow-prev, .discover .slider-dots {
+    font-size: 12px !important;
+  }
+  .discover .slider-arrow-next div, .discover .slider-arrow-prev div, .discover .slider-dots div {
+    width: 25px !important;
+    height: 25px !important;
   }
 }
 input {
