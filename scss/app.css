@@ -1239,6 +1239,7 @@ h2 {
 }
 .collections-item-body .right {
   text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -1518,7 +1519,7 @@ h2 {
   }
   .collections-item-body-cate {
     position: absolute;
-    top: -28%;
+    top: -34%;
     width: 30%;
     left: 52%;
     transform: translateX(-50%);
@@ -1558,10 +1559,13 @@ h2 {
     height: 111px;
   }
   .collections-item-body {
-    height: 28%;
+    height: 30%;
   }
   .collections-item-body .left p, .collections-item-body .left h2 {
     font-size: 13px;
+  }
+  .collections-item-body .right {
+    gap: 3px;
   }
   .collections-item-body .right p {
     font-size: 13px;
@@ -1575,6 +1579,9 @@ h2 {
   }
   .collections-item.sm .left h2 {
     font-size: 16px !important;
+  }
+  .collections-item.sm .right {
+    gap: 3px;
   }
 }
 .game-list {
