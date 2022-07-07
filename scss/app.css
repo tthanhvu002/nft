@@ -535,10 +535,10 @@ h2 {
     bottom: 3px;
   }
   .banner.hp3 .banner-text h2 {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
   .banner.hp3 .banner-text p {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
   .banner.hp3 .banner-slogan {
     top: 172px;
@@ -580,7 +580,8 @@ h2 {
     height: 190px;
   }
   .banner .banner-text {
-    left: 50px;
+    left: 18px;
+    font-size: 20px;
   }
   .banner .banner-text p, .banner .banner-text h2 {
     font-size: 15px !important;
@@ -801,7 +802,7 @@ h2 {
   }
   .info-wrap .logo-list {
     margin-top: 20px;
-    gap: 0;
+    gap: 10px;
   }
   .info-wrap .logo-list .item {
     margin: 0 auto;

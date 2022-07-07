@@ -1,5 +1,5 @@
 window.onload = () => {
-    
+    alert(document.body.offsetWidth)
     const pTag = document.querySelectorAll('p')
     const h2Tag = document.querySelectorAll('h2')
     const spanTag = document.querySelectorAll('span')
@@ -21,5 +21,5 @@ window.onload = () => {
                 item.classList.add('fz-mb')
             }
             
-        })
+    })
 }

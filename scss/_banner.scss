@@ -161,10 +161,10 @@
         bottom: unset !important;
         height: fit-content;
         h2{
-            font-size: 35px !important;
+            font-size: 25px !important;
         }
         p{
-            font-size: 35px !important;
+            font-size: 25px !important;
         }
         left: 100px;
         bottom: 3px;
@@ -212,7 +212,8 @@
     .banner{
         height: 190px;
         .banner-text{
-            left: 50px;
+            left: 18px;
+            font-size: 20px;
             p,h2{
                 font-size: 15px !important;
             }
