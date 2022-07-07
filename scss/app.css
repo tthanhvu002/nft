@@ -1574,6 +1574,9 @@ h2 {
     width: 20px;
     height: 20px;
   }
+  .collections-item-body-cate {
+    top: -32%;
+  }
   .collections-item.sm .left p {
     font-size: 13px;
   }
@@ -2191,7 +2194,7 @@ h2 {
     height: 50px;
   }
   .banner2 .banner-money p {
-    font-size: 17px;
+    font-size: 15px;
     transform: translate(45px, -83px);
   }
   .banner2-text-mb {
