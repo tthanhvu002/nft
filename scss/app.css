@@ -570,7 +570,7 @@ h2 {
     gap: 5px;
   }
   .banner.hp3 .banner-text h2, .banner.hp3 .banner-text p {
-    font-size: 12px !important;
+    font-size: 9px !important;
   }
   .banner.hp3 .banner-abs {
     right: 18.5% !important;
@@ -782,7 +782,7 @@ h2 {
 }
 @media screen and (max-width: 767.98px) {
   .info-wrap .info-wrap-row .col-lg-6 ul li {
-    font-size: 25px;
+    font-size: 12px;
   }
   .info-wrap-heading {
     background-size: cover;
@@ -930,7 +930,7 @@ h2 {
     gap: 14px;
   }
   .footer-link-heading span {
-    font-size: 20px;
+    font-size: 17px;
   }
   .footer-copyright div {
     font-size: 17px;
@@ -1559,8 +1559,8 @@ h2 {
     font-size: 13px;
   }
   .collections-item-body .right img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   .collections-item.sm .left p {
     font-size: 13px;
@@ -1932,13 +1932,16 @@ h2 {
   }
   .game-list-item-md-btn .right {
     height: 20px;
-    transform: translateX(-16px);
+    transform: translateX(-30px);
   }
   .game-list-item-md-btn .right span {
     transform: translate(-12%, -50%);
     top: 65%;
     left: 43%;
     font-size: 7px;
+  }
+  .game-list-item-md-btn .right .soon {
+    transform: translate(-22%, -50%);
   }
   .game-list-item-right h2 {
     font-size: 15px;
