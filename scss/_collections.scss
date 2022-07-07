@@ -436,13 +436,16 @@
                 transform: unset;
             }
             &-body{
-                height: 23%;
+                height: 25%;
                 .left{
                     p,h2{
                         font-size: 13px;
                     }
                 }
                 .right{
+                    p{
+                        font-size: 13px;
+                    }
                     img{
                         width: 30px;
                         height: 30px;
