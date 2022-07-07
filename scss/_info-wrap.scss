@@ -170,6 +170,11 @@
                 top: 50%;
             }
         }
+        &-row{
+            p{
+                font-size: 14px;
+            }
+        }
         &-heading--center{
             background-size: cover;
             span{
@@ -189,12 +194,22 @@
                 }
             }
             .item-img{
-                padding: 10px 16px;
+                padding: 4px 18px;
                 img{
-                    width: 80px;
-                    height: 80px;
+                    width: 90px;
+                    height: 75px;
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 420px){
+    .info-wrap{
+        &-heading{
+            span{
+                left: 15px;
+            }
+        }
+       
     }
 }

@@ -88,6 +88,12 @@
 @media screen and (max-width: 767.98px) {
     .footer{
         &-link{
+            &-menu{
+                min-height: 128px;
+                li{
+                    font-size: 14px;
+                }
+            }
             &-heading{
                 span{
                     font-size: 30px;
@@ -114,10 +120,16 @@
             gap: 14px;
         }
         &-link{
+            
             &-heading{
                 span{
                     font-size: 20px;
                 }
+            }
+        }
+        &-copyright{
+            div{
+                font-size: 17px;
             }
         }
         &-line img{

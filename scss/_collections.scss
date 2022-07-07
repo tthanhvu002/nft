@@ -428,6 +428,28 @@
 }
 @media screen and (max-width: 767.98px){
     .collections{
+        &-item{
+            &-wrap{
+                height: 240px;
+            }
+            &-img{
+                transform: unset;
+            }
+            &-body{
+                height: 23%;
+                .left{
+                    p,h2{
+                        font-size: 13px;
+                    }
+                }
+                .right{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
         &-item.sm{
             .left{
                 p{
@@ -438,5 +460,6 @@
                 }
             }
         }
+        
     }
 }

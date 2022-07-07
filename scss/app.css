@@ -791,6 +791,9 @@ h2 {
   .info-wrap-heading span {
     top: 50%;
   }
+  .info-wrap-row p {
+    font-size: 14px;
+  }
   .info-wrap-heading--center {
     background-size: cover;
   }
@@ -811,11 +814,16 @@ h2 {
     font-size: 26px;
   }
   .info-wrap .logo-list .item-img {
-    padding: 10px 16px;
+    padding: 4px 18px;
   }
   .info-wrap .logo-list .item-img img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .info-wrap-heading span {
+    left: 15px;
   }
 }
 .footer {
@@ -895,6 +903,12 @@ h2 {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .footer-link-menu {
+    min-height: 128px;
+  }
+  .footer-link-menu li {
+    font-size: 14px;
+  }
   .footer-link-heading span {
     font-size: 30px;
   }
@@ -917,6 +931,9 @@ h2 {
   }
   .footer-link-heading span {
     font-size: 20px;
+  }
+  .footer-copyright div {
+    font-size: 17px;
   }
   .footer-line img {
     transform: translate(6px, -12px);
@@ -991,14 +1008,14 @@ h2 {
 }
 @media screen and (max-width: 767.98px) {
   .heading-btn {
-    height: 55px;
+    height: 45px;
   }
   .heading-btn img {
-    height: 55px;
+    height: 45px;
   }
   .heading-btn .btn-wrap {
     width: 111px;
-    height: 55px;
+    height: 45px;
   }
   .heading-btn .btn-wrap .border-btn {
     width: 97%;
@@ -1143,7 +1160,10 @@ h2 {
     gap: 20px;
   }
   .mystery-box .mystery-item-info .left .name {
-    font-size: 25px;
+    font-size: 18px;
+  }
+  .mystery-box .mystery-item-info .left .price {
+    font-size: 20px;
   }
 }
 .collections {
@@ -1523,6 +1543,22 @@ h2 {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .collections-item-wrap {
+    height: 240px;
+  }
+  .collections-item-img {
+    transform: unset;
+  }
+  .collections-item-body {
+    height: 23%;
+  }
+  .collections-item-body .left p, .collections-item-body .left h2 {
+    font-size: 13px;
+  }
+  .collections-item-body .right img {
+    width: 30px;
+    height: 30px;
+  }
   .collections-item.sm .left p {
     font-size: 13px;
   }
@@ -2817,7 +2853,7 @@ input:checked + label:after {
 }
 @media screen and (max-width: 420px) {
   .fz-mb {
-    font-size: 15px !important;
+    font-size: 20px !important;
   }
 }
 
