@@ -194,17 +194,21 @@ h2 {
     object-position: center;
   }
   .hot-title p {
-    font-size: 17px;
+    top: 3px;
+    font-size: 15px;
   }
   .hot-title-name {
-    font-size: 17px;
+    font-size: 15px;
   }
   .hot-title-viewall {
-    font-size: 17px;
+    font-size: 15px;
   }
   .hot-title-viewall-mb img {
-    height: 29px;
+    height: 24px;
     width: 55px;
+  }
+  .hot-title-viewall-mb p {
+    top: -1px;
   }
   .hot-title-select select {
     font-size: 20px;
@@ -1548,7 +1552,10 @@ h2 {
 }
 @media screen and (max-width: 767.98px) {
   .collections-item-wrap {
-    height: 240px;
+    height: 210px;
+  }
+  .collections-item-img img {
+    height: 111px;
   }
   .collections-item-body {
     height: 25%;
@@ -1933,7 +1940,7 @@ h2 {
   }
   .game-list-item-md-btn .right {
     height: 20px;
-    transform: translateX(-30px);
+    transform: translateX(-20px);
   }
   .game-list-item-md-btn .right span {
     transform: translate(-12%, -50%);
@@ -2601,6 +2608,10 @@ h2 {
   .discover-filter-game-list img {
     width: 30px;
     height: 30px;
+  }
+  .discover-filter-heading-text {
+    font-size: 15px;
+    margin-right: 5px;
   }
 }
 input {

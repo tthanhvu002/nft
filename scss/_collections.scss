@@ -430,9 +430,13 @@
     .collections{
         &-item{
             &-wrap{
-                height: 240px;
+                height: 210px;
             }
             &-img{
+                img{
+                    height: 111px;
+
+                }
             }
             &-body{
                 height: 25%;

@@ -145,18 +145,24 @@ h2{
   }
   .hot-title{
     p{
-      font-size: 17px;
+      top: 3px;
+      font-size: 15px;
     }
     &-name{
-      font-size: 17px;
+      font-size: 15px;
     }
     &-viewall{
-      font-size: 17px;
+      font-size: 15px;
     }
     &-viewall-mb img{
-      height: 29px;
+      height: 24px;
       width: 55px;
     }
+     &-viewall-mb {
+      p{
+        top: -1px;
+      }
+     }
   }
   .hot-title-select select {
     font-size: 20px;
