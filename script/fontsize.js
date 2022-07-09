@@ -1,3 +1,5 @@
+
+/* them class fz-mb vao cac the co fontsize > 50  */
 window.onload = () => {
     alert(document.body.offsetWidth)
     const pTag = document.querySelectorAll('p')

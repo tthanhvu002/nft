@@ -128,9 +128,8 @@
         }
     }
 }
-@media screen and (min-width: 1800px){
 
-}
+/* pc */
 @media screen and (min-width: 1200px) and (max-width: 1500px){
     .banner2{
         &-text{
@@ -140,6 +139,7 @@
         }
     }
 }
+/* mobile & tablet */
 @media screen and (max-width: 1023.98px) {
     .banner2{
         .row{
@@ -203,7 +203,7 @@
         }
     }
 }
-
+/* mobile */
 @media screen and (max-width: 767.98px) {
     .banner2{
         .banner-money{
@@ -251,6 +251,7 @@
         }
     }
 }
+/* small mobile */
 @media screen and (max-width: 420px){
     .banner2{
         &-box{

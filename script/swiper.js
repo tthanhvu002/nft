@@ -76,31 +76,3 @@ const swiper2 = new Swiper('.swiper2', {
   }});
 
 
-console.log(swiper2);
-  /* const buildSwiperSlider = item => {
-    return new Swiper(`${item.id}`, {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-}
-const allSliders = document.querySelectorAll('.swiper');
-
-  // Loop over all of the fetched sliders and apply Swiper on each one.
-  allSliders.forEach(slider => buildSwiperSlider(slider)); */
